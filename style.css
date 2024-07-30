@@ -1,0 +1,158 @@
+body {
+    background-color: rgb(225 225 225 / 90%);
+    direction: rtl;
+    font-family: cursive;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+
+@media(min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Madium */
+
+@media(min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+
+@media(min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*---------------- Start Time-heder---------------- */
+.time-heder .container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cfcfcfa1;
+    margin-top: 20px;
+
+}
+
+@media(max-width: 900px) {
+    .time-heder .container {
+        display: block;
+        text-align: center;
+    }
+}
+
+.time-heder .container .cuntry,
+.time-heder .container .time-how-time {
+    font-size: 25px;
+}
+
+.history .time-history,
+.how-time .how {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+@media(max-width: 900px) {
+    .how-time {
+        margin-bottom: 30px;
+    }
+}
+
+.time-heder .opition h3 {
+    margin-bottom: 10px;
+    margin-top: 11px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.time-heder .opition select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg"><polyline points="15,40 70,95 125,40" stroke="gray" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat left 15px center;
+    background-size: 13px;
+    margin-bottom: 60px;
+}
+
+@media(max-width: 900px) {
+    .time-heder .opition {
+        margin: 39px 0 0;
+    }
+}
+
+.time-heder .opition select:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/*---------------- End Time-heder---------------- */
+/*------------------ Start Body --------------*/
+.card-container {
+    margin-top: 30px;
+}
+
+.card-container .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+@media(max-width: 777px) {
+    .card-container .container {
+        place-items: center;
+    }
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 230PX;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 16px;
+}
+.card h2{
+    margin-top: 10px;
+}
+.card span {
+    display: block;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        font-size: 23px;
+        color: #4478d6d9;
+        font-weight: 700;
+}
+/*------------------ End Body --------------*/
+
+
+
+#country {
+    font-size: 30px;
+}

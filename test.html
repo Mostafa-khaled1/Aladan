@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Aladan</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!-------------------- Start Time-heder -------------------->
+
+    <div class="time-heder">
+      <div class="container">
+        <div class="history">
+          <div class="time-history">
+            <span lang="en" id="datetime">0</span>
+          </div>
+          <div id="country" class="country">Tanta</div>
+        </div>
+
+        <div class="opition">
+          <h3>اختر مدينتك</h3>
+          <select id="Select">
+            <option value="Tanta">طنطا</option>
+            <option value="Cairo">القاهره</option>
+            <option value="Alexandria">اسكندريه</option>
+            <option value="Damietta">دمياط</option>
+            <option value="Manya">المنيا</option>
+            <option value="Sohag">سوهاج</option>
+            <option value="Port Said">بورسعيد</option>
+            <option value="Mansoura">المنصوره</option>
+          </select>
+        </div>
+
+        <!-- <div class="how-time">
+          <div class="how">متبقي علي صلاه العصر</div>
+          <div lang="en" class="time-how-time">1:59:24</div>
+        </div> -->
+      </div>
+    </div>
+    <!----------------- End Time-heder -------------------->
+    <!------------------- Start Body -------------------->
+    <div class="card-container">
+      <div class="container">
+        <div class="card">
+          <img src="./image/وقت الشروق.jpg" />
+          <h2>شروق</h2>
+          <span id="shrouk">00:00</span>
+        </div>
+        <div class="card">
+          <img src="./image/وقت الظهر.jpg" />
+          <h2>ظهر</h2>
+          <span id="dohr">00:00</span>
+        </div>
+        <div class="card">
+          <img src="./image/وقت العصر.jpg" />
+          <h2>عصر</h2>
+          <span id="asr">00:00</span>
+        </div>
+        <div class="card">
+          <img src="./image/وقت الغروب.jpg" />
+          <h2>غروب</h2>
+          <span id="magreb">00:00</span>
+        </div>
+        <div class="card">
+          <img src="./image/وقت العشاء.jpg" />
+          <h2>عشاء</h2>
+          <span id="asha">00:00</span>
+        </div>
+        <div class="card">
+          <img src="./image/وقت الفجر.jpg" />
+          <h2>فجر</h2>
+          <span id="fajr">00:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!------------------- End Body -------------------->
+  </body>
+
+  <script src="./main.js"></script>
+</html>
